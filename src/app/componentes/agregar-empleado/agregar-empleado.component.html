@@ -1,0 +1,58 @@
+<div class="card">
+    <div class="card-header">
+        Agregar empleado
+    </div>
+    <div class="card-body">
+        <form ngNativeValidate [formGroup]="formularioDeEmpleados" (ngSubmit)="enviarDatos()">
+            <div class="mb-3">
+              <label for="" class="form-label">Nombre</label>
+              <input required="" type="text"
+                class="form-control" name="" formControlName="nombre" id="" aria-describedby="helpId" placeholder="Escribe tu nombre completo">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Fecha de nacimiento</label>
+              <input required="" type="date"
+                class="form-control" name="" formControlName="fecha_nacimiento" id="" aria-describedby="helpId" placeholder="">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Teléfono</label>
+              <input type="tel" class=""
+                class="form-control" name="" formControlName="telefono" id="" aria-describedby="helpId" placeholder="Escribe tu telefono. Ej: 6143639472">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Email</label>
+              <input required type="email"
+                class="form-control" name="" formControlName="email" id="" aria-describedby="helpId" placeholder="Escribe tu Email">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Calle</label>
+              <input type="text"
+                class="form-control" name="" formControlName="calle" id="" aria-describedby="helpId" placeholder="Escribe tu calle.">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Numero Exterior</label>
+              <input type="text"
+                class="form-control" name="" formControlName="numero" id="" aria-describedby="helpId" placeholder="Escribe numero exterior.">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Colonia</label>
+              <input type="text"
+                class="form-control" name="" formControlName="colonia" id="" aria-describedby="helpId" placeholder="Escribe tu colonia.">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Ciudad</label>
+              <input type="text"
+                class="form-control" name="" formControlName="ciudad" id="" aria-describedby="helpId" placeholder="Escribe tu Ciudad.">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Codigo Postal</label>
+              <input type="text"
+                class="form-control" name="" formControlName="codigo_postal" id="" aria-describedby="helpId" placeholder="Escribe tu codigo postal.">
+            </div>
+            <div class="btn-group" role="group" aria-label="Button group name">
+                <button type="submit" class="btn btn-success">Agregar</button>
+                <button type="button" routerLink="/listar-empleado/" class="btn btn-primary">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
